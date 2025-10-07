@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.header{
+    display: flex;
+    background-color: #7d8ce6;
+    justify-content: space-between;
+    height: 100px;
+    position: fixed;    
+    width: 100%;
+    z-index: 100;
+
+}
+
+.header-name{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+}
+
+.nav-list{
+    display: flex;  
+    list-style: none;
+    gap: 10px;
+    margin-right: 20px;
+    margin-top: 25px;
+    font-size: 25px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+.nav-list li a:hover{
+    background-color: white;
+    color: #1976d2;
+    transform: scale(1.1);
+}
+
+
+
+#about{
+    
+    padding-top: 100px;
+    background-color: #e0f7fa;
+}
+
+.title{
+    
+    text-align: center;
+    font-size: 30px;
+    color: #1976d2;
+}
+
+.image{
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    display: block;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.1);
+}
+.card{
+    border: 2px solid #1976d2;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    background-color: #e3f2fd;
+    box-shadow: 5px 5px 10px grey;
+    transition: transform 0.3s;
+    font-size: 20px;
+    width: 300px;
+    flex-wrap: wrap;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+#skills{
+    padding-top: 10px;
+    background-color: #d3e5ff;;
+}
+
+.title-mini{
+    font-size: 20px;
+    text-align: center;
+}
+
+#education{
+    padding-top: 10px;
+    background-color: #d8dffa;
+    padding-bottom: 30px;
+}
+
+#tir-list{
+    padding-top: 10px;
+    background-color: #fce4ec;
+    padding-bottom: 10px;
+}
+
+#contacts{
+    background-color: #fffde7;
+}
+
+.footer{
+    background-color: #7d8ce6;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.card-university{
+    background-color: #ddeafb;
+    border: 2px solid #7e57c2;
+    border-radius: 15px;
+    box-shadow: 3px 3px 8px #bdbdbd;
+    width: 350px;
+    text-align: center;
+    margin: auto;
+    text-align: center;
+}
+
+.table{
+    margin: auto;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.td-s{
+    background-color: rgb(0, 191, 255);
+}
+
+.td-a{
+    background-color: rgb(0, 237, 0);
+}
+
+.td-b{
+    background-color: yellow;
+}
+
+.td-c{
+    background-color: red;
+}
+
+.th{
+    background-color:#ce83f7 ;
+}   
+
+.image-contact{
+    width:50px;
+}
+
+.contact-card{
+    
+    padding: 10px;
+    width: 50px;
+    margin-bottom: 10px;
+}

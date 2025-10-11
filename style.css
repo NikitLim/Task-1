@@ -1,180 +1,303 @@
-*{
-    margin: 0;
-    padding: 0;
+/* Основные стили */
+* {
+  margin: 0;
+  padding: 0;
 }
 
-
-.header{
-    display: flex;
-    background-color: #7d8ce6;
-    justify-content: space-between;
-    height: 100px;
-    position: fixed;    
-    width: 100%;
-    z-index: 100;
-
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #ffffff;
 }
 
-.header-name{
-    font-size: 25px;
-    margin-left: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-    color: white;
+.header {
+  display: flex;
+  background-color: #0a0a0a;
+  justify-content: space-between;
+  height: 150px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  color: #ffffff;
 }
 
-.nav-list{
-    display: flex;  
-    list-style: none;
-    gap: 10px;
-    margin-right: 20px;
-    margin-top: 25px;
-    font-size: 25px;
+.header-name {
+  font-size: 25px;
+  margin-left: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.nav-list li a{
-    text-decoration: none;
-    background-color: #1976d2;
-    color: white;
-    border-radius: 10px;
-    padding: 5px;
-    transition: transform 0.3s;
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  margin-right: 20px;
+  margin-top: 25px;
+  font-size: 25px;
 }
 
-.nav-list li a:hover{
-    background-color: white;
-    color: #1976d2;
-    transform: scale(1.1);
+.nav-list li a {
+  text-decoration: none;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 2px solid #1e90ff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s;
 }
 
-
-
-#about{
-    
-    padding-top: 100px;
-    background-color: #e0f7fa;
+.nav-list li a:hover {
+  background-color: #1e90ff;
+  color: #0a0a0a;
+  transform: scale(1.1);
+  border-color: transparent;
 }
 
-.title{
-    
-    text-align: center;
-    font-size: 30px;
-    color: #1976d2;
+#about {
+  padding-top: 150px;
+  background-color: #0a0a0a;
 }
 
-.image{
-    margin-left: auto;
-    margin-right: auto;
-    width: 300px;
-    display: block;
-    border-radius: 50%;
-    transition: transform 0.3s;
+.title {
+  text-align: center;
+  font-size: 70px;
+  color: #1e90ff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  display: block;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  grid-row: 1/3;
 }
 
 .image:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-.card{
-    border: 2px solid #1976d2;
-    border-radius: 15px;
-    padding: 20px;
-    margin: 15px;
-    background-color: #e3f2fd;
-    box-shadow: 5px 5px 10px grey;
-    transition: transform 0.3s;
-    font-size: 20px;
-    width: 300px;
-    flex-wrap: wrap;
+
+.card {
+  border: 2px solid #2e2e2e;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 15px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  font-size: 20px;
+  width: 300px;
 }
 
 .card:hover {
-    transform: scale(1.05);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  border-color: #1e90ff;
 }
 
-.cards{
+.about-card {
+  font-size: 50px;
+  text-align: center;
+  margin: 30px;
+  margin-bottom: 15px;
+  width: 100%;
+  align-items: center;
+}
+
+.about-card-list {
     display: flex;
-    justify-content: center;
-}
-
-#skills{
-    padding-top: 10px;
-    background-color: #d3e5ff;;
-}
-
-.title-mini{
-    font-size: 20px;
-    text-align: center;
-}
-
-#education{
-    padding-top: 10px;
-    background-color: #d8dffa;
-    padding-bottom: 30px;
-}
-
-#tir-list{
-    padding-top: 10px;
-    background-color: #fce4ec;
-    padding-bottom: 10px;
-}
-
-#contacts{
-    background-color: #fffde7;
-}
-
-.footer{
-    background-color: #7d8ce6;
-    height: 40px;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.card-university{
-    background-color: #ddeafb;
-    border: 2px solid #7e57c2;
-    border-radius: 15px;
-    box-shadow: 3px 3px 8px #bdbdbd;
-    width: 350px;
-    text-align: center;
-    margin: auto;
-    text-align: center;
-}
-
-.table{
-    margin: auto;
-    margin-top: 15px;
-    font-size: 20px;
-}
-
-.td-s{
-    background-color: rgb(0, 191, 255);
-}
-
-.td-a{
-    background-color: rgb(0, 237, 0);
-}
-
-.td-b{
-    background-color: yellow;
-}
-
-.td-c{
-    background-color: red;
-}
-
-.th{
-    background-color:#ce83f7 ;
-}   
-
-.image-contact{
-    width:50px;
-}
-
-.contact-card{
+    justify-content: space-around;
     
-    padding: 10px;
-    width: 50px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#skills {
+  padding-top: 10px;
+  background-color: #121212;
+}
+
+.card-skills-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.skill-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;  
+    font-size: 20px;
+}
+
+.skill-card-title {
+    font-size: 30px;
     margin-bottom: 10px;
+    color: #cccccc;
+    text-align: center;
+}
+
+.skill-card-text {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+.skill-card {
+  background-color: #1e1e1e;
+  border: 2px solid #7e57c2;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px #bdbdbd;
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  margin: auto;
+  transition: transform 0.3s;
+}
+
+.skill-card:hover {
+  scale: 1.1;
+}
+.title-mini {
+  font-size: 50px;
+  text-align: center;
+  color: #6fdcfd;
+  margin-bottom: 20px;
+}
+
+#education {
+  padding-top: 10px;
+  background-color: #1a1a1a;
+  padding-bottom: 30px;
+}
+
+.education-cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 800px;
+  margin-bottom: 30px;
+}
+
+#tir-list {
+  padding-top: 10px;
+  background-color: #1c1c1c;
+  padding-bottom: 10px;
+}
+
+#contacts {
+  background-color: #161616;
+}
+
+.footer {
+  background-color: #0a0a0a;
+  height: 40px;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card-university {
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  background-image: url("RTU_MIREA_coat_of_arms_colour.svg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.education-card{
+    grid-column: 2/2;
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.title-university {
+    position: relative;
+    font-size: 35px;
+    margin-top: 200px;
+    z-index: 2;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,0.6);
+  z-index: 1;
+}
+
+.table {
+  margin: auto;
+  margin-top: 15px;
+  font-size: 40px;
+  background-color: #1e1e1e;
+  border-collapse: collapse;
+  text-align: center;
+  margin: auto;
+}
+
+.th {
+  background-color: #1e90ff;
+  color: #0a0a0a;
+}
+
+.td-s {
+  background-color: #60b8ff;
+}
+.td-a {
+  background-color: rgb(65, 255, 40);
+}
+.td-b {
+  background-color: rgb(252, 214, 27);
+}
+.td-c {
+  background-color: red;
+}
+
+.image-contact {
+  width: 100px;
+}
+
+.contact-card {
+  padding: 10px;
+  width: 100px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.contact-card-list {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.contact-card:hover {
+  transform: rotate(3deg) scale(1.05);
 }
